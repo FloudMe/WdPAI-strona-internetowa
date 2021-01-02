@@ -20,10 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0203daba-31eb-4e31-9014-f547a5560b8e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routing.php" beforeDir="false" afterPath="$PROJECT_DIR$/Routing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/php/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/php/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/SecurityController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +43,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -56,7 +58,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609588642751</updated>
-      <workItem from="1609588645206" duration="4885000" />
+      <workItem from="1609588645206" duration="8167000" />
     </task>
     <servers />
   </component>
@@ -75,18 +77,34 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1609592495203">
+    <state x="673" y="361" key="#SQL_Dialects" timestamp="1609596783703">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1609592495203" />
+    <state x="673" y="361" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1609596783703" />
+    <state x="946" y="0" width="974" height="1040" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609594934083">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="946" y="0" width="974" height="1040" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609594934083" />
+    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1609595211942">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1609595211942" />
     <state x="1213" y="247" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1609589380422">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1213" y="247" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609589380422" />
-    <state x="1165" y="246" key="NewPhpClassDialog" timestamp="1609592441263">
+    <state x="1165" y="246" key="NewPhpClassDialog" timestamp="1609595574557">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1165" y="246" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609592441263" />
+    <state x="1165" y="246" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609595574557" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1609595035161">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609595035161" />
+    <state x="818" y="188" width="629" height="664" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1609594894544">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="818" y="188" width="629" height="664" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609594894544" />
     <state x="1096" y="244" key="run.anything.popup" timestamp="1609589805655">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
