@@ -1,7 +1,7 @@
 <?php
 
 require_once "Repository.php";
-require_once __DIR__.'/../module/Project.php';
+require_once __DIR__.'/../models/Project.php';
 
 class ProjectRepository extends Repository
 {
