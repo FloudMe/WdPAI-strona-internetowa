@@ -20,13 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0203daba-31eb-4e31-9014-f547a5560b8e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Routing.php" beforeDir="false" afterPath="$PROJECT_DIR$/Routing.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/views/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/views/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/projects.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AppController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/DeafultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/DefultController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609588642751</updated>
-      <workItem from="1609588645206" duration="1940000" />
+      <workItem from="1609588645206" duration="4885000" />
     </task>
     <servers />
   </component>
@@ -78,18 +75,18 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1609588865779">
+    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1609592495203">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1609588865779" />
+    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1609592495203" />
     <state x="1213" y="247" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1609589380422">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1213" y="247" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609589380422" />
-    <state x="1165" y="246" key="NewPhpClassDialog" timestamp="1609588917926">
+    <state x="1165" y="246" key="NewPhpClassDialog" timestamp="1609592441263">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1165" y="246" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609588917926" />
+    <state x="1165" y="246" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609592441263" />
     <state x="1096" y="244" key="run.anything.popup" timestamp="1609589805655">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

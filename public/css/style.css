@@ -50,7 +50,7 @@ button{/*login.php*/
     line-height: 2.5em;
 }
 
-input{/*login.php*/
+input, textarea{/*login.php*/
     background-color: transparent;
     border: none;
     border-bottom: 1px solid gray;

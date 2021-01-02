@@ -2,6 +2,7 @@
 
 require_once 'src/controllers/DefultController.php';
 require_once 'src/controllers/SecurityController.php';
+require_once 'src/controllers/ProjectController.php';
 
 class Routing {
 
