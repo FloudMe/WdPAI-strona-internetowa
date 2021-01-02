@@ -1,12 +1,18 @@
 <?php
 
-require_once 'src/controllers/DeafultController.php';
+require_once 'src/controllers/DefultController.php';
+require_once 'src/controllers/SecurityController.php';
 
 class Routing {
 
   public static $routes;
 
   public static function get($url, $view) {
+    self::$routes[$url] = $view;
+  }
+
+  public static function post($url, $view)
+  {
     self::$routes[$url] = $view;
   }
 
@@ -17,7 +23,7 @@ class Routing {
     }
 
     $controller = self::$routes[$action];
-    // die($controller);
+
     $object = new $controller;
     $action = $action ?: 'index';
 

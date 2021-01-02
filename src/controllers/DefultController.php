@@ -2,7 +2,7 @@
 
 require_once 'AppController.php';
 
-class DeafultController extends AppController {
+class DefultController extends AppController {
 
     public function index()
     {

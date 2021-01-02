@@ -1,8 +1,8 @@
-body{/*login.html*/
+body{/*login.php*/
     margin:0;
 }
 
-.container{/*login.html*/
+.container{/*login.php*/
     width: 100vw;
     height: 100vh;
     background: transparent linear-gradient(180deg, #FFD941 0%, #AA8C15 100%, #806D21 100%) 0% 0% no-repeat padding-box;
@@ -13,16 +13,16 @@ body{/*login.html*/
     align-items: center;
 }
 
-.logo{/*login.html*/
+.logo{/*login.php*/
     width: 50%;
     text-align: center;
 }
 
-.login-container{/*login.html*/
+.login-container{/*login.php*/
     width: 50%;
 }
 
-form.login{/*login.html*/
+form.login{/*login.php*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +37,7 @@ form.login{/*login.html*/
     border-radius: 35px;
 }
 
-button{/*login.html*/
+button{/*login.php*/
     background: transparent linear-gradient(180deg, #F7D23D 0%, #AA8C15 100%) 0% 0% no-repeat padding-box;
     box-shadow: 5px 5px 6px #00000029;
     border: 1px solid #707070;
@@ -50,7 +50,7 @@ button{/*login.html*/
     line-height: 2.5em;
 }
 
-input{/*login.html*/
+input{/*login.php*/
     background-color: transparent;
     border: none;
     border-bottom: 1px solid gray;
@@ -59,7 +59,7 @@ input{/*login.html*/
     width: 50%;
 }
 
-@media only screen and (max-device-width: 420px){/*login.html*/
+@media only screen and (max-device-width: 420px){/*login.php*/
     .container{
         flex-direction: column;
     }
@@ -89,14 +89,14 @@ input{/*login.html*/
     }
 }
 
-.base-container{ /*projects.html*/
+.base-container{ /*projects.php*/
     display: flex;
     align-items: center;
     justify-content: flex-start;
     height: 100vh;
 }
 
-nav{ /*projects.html*/
+nav{ /*projects.php*/
     width: 20vw;
     height: 100%;
     background: transparent linear-gradient(180deg, #FFD941 0%, #7F6C20 100%) 0% 0% no-repeat padding-box;
@@ -107,16 +107,16 @@ nav{ /*projects.html*/
     justify-content: flex-start;
 }
 
-main{ /*projects.html*/
+main{ /*projects.php*/
     width: 80vw;
 }
 
-nav > img{ /*projects.html*/
+nav > img{ /*projects.php*/
     width: 45%;
     margin: 0em auto;
 }
 
-a{/*projects.html*/
+a{/*projects.php*/
     text-decoration: none;
 
     color: black;
@@ -125,11 +125,11 @@ a{/*projects.html*/
     line-height: 2em;
 }
 
-li i{ /*projects.html*/
+li i{ /*projects.php*/
     font-size: 1.5em;
 }
 
-.button{/*projects.html*/
+.button{/*projects.php*/
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 1em 1em 1em #00000029;
     border: 1px solid #707070;
@@ -143,7 +143,7 @@ li i{ /*projects.html*/
     width: 60%;
 }
 
-ul{/*projects.html*/
+ul{/*projects.php*/
     list-style-type: none;
     text-align: left;
     font: normal normal normal 13px/17px Segoe UI;
@@ -156,28 +156,28 @@ ul{/*projects.html*/
     position: relative;
 }
 
-li{/*projects.html*/
+li{/*projects.php*/
     text-align: left;
     margin-bottom: 1em;
 }
 
-li:last-child{/*projects.html*/
+li:last-child{/*projects.php*/
     position: absolute;
     bottom: 0;
     width:100%;
 }
 
-.fa, .fas{/*projects.html*/
+.fa, .fas{/*projects.php*/
     width: 1em;
 }
 
-main{/*projects.html*/
+main{/*projects.php*/
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
-header{/*projects.html*/
+header{/*projects.php*/
     display: flex;
     justify-content: space-between;
     padding: 1em 2em;
