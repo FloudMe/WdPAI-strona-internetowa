@@ -15,7 +15,7 @@ class Database
         $this->username = USERNAME;
         $this->password = PASSWORD;
         $this->host = HOST;
-        $this->database = DATEBASE;
+        $this->database = DATABASE;
     }
 
     public function connect()
