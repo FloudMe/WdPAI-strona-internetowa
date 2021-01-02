@@ -177,7 +177,7 @@ main{/*projects.html*/
     height: 100vh;
 }
 
-header{
+header{/*projects.html*/
     display: flex;
     justify-content: space-between;
     padding: 1em 2em;
