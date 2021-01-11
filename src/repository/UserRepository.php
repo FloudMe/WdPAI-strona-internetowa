@@ -28,4 +28,36 @@ class UserRepository extends Repository
             $user['surname']
         );
     }
+
+    public function addUser(User $user)
+    {
+        $stmt = $this->database->connect()->prepare('
+            INSERT INTO Users (name, surname, email, password)
+            VALUES (?, ?, ?)
+        ');
+
+        $stmt->execute([
+            $user->getName(),
+            $user->getSurname(),
+            $user->getEmail(),
+            $user->getPassword(),
+        ]);
+    }
+
+    public function getUserDetailsId(User $user): int
+    {
+        $stmt = $this->database->connect()->prepare('
+            SELECT * FROM Users WHERE name = :name AND surname = :surname AND email = :email
+        ');
+        $name = $user->getName();
+        $stmt->bindParam(':name', $name, PDO::PARAM_STR);
+        $surname = $user->getSurname();
+        $stmt->bindParam(':surname', $surname, PDO::PARAM_STR);
+        $email = $user->getEmail();
+        $stmt->bindParam(':phone', $email, PDO::PARAM_STR);
+        $stmt->execute();
+
+        $data = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $data['id'];
+    }
 }

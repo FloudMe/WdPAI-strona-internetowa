@@ -34,10 +34,24 @@ form.login{/*login.php*/
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 5px 5px 5px #00000029;
     border: 1px solid #707070;
-    border-radius: 35px;
+    border-radius: 3em;
 }
 
-button{/*login.php*/
+form.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60vh;
+    background: #FFFFFFE0 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 33px;
+}
+
+
+button.login, button.register, .register > button{/*login.php*/
     background: transparent linear-gradient(180deg, #F7D23D 0%, #AA8C15 100%) 0% 0% no-repeat padding-box;
     box-shadow: 5px 5px 6px #00000029;
     border: 1px solid #707070;
@@ -57,36 +71,6 @@ input, textarea{/*login.php*/
     padding: 1em;
     margin: 1em;
     width: 50%;
-}
-
-@media only screen and (max-device-width: 420px){/*login.php*/
-    .container{
-        flex-direction: column;
-    }
-
-    *{
-        font-size:36px;
-    }
-
-    .login-container, .logo{
-        width:100%;
-    }
-
-    form{
-        margin: auto;
-    }
-
-    img{
-        height: 7em;
-        margin: 2em;
-    }
-
-    input{
-        font-size: 0.5em;
-    }
-    button{
-        font-size: 0.5em;
-    }
 }
 
 .base-container{ /*projects.php*/
@@ -189,4 +173,78 @@ header{/*projects.php*/
     border-radius: 1em;
     box-shadow: 0 0 0.2em red;
     outline: none;
+}
+
+.projects{
+    font-size: 30px;
+}
+
+.text-why{
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-device-width: 420px){/*login.php*/
+    .container{
+        flex-direction: column;
+    }
+
+    *{
+        font-size:24px;
+    }
+
+    .login-container, .logo{
+        width:100%;
+    }
+
+    form{
+        margin: auto;
+    }
+
+    img{
+        height: 7em;
+        margin: 2em;
+    }
+
+    input{
+        font-size: 0.5em;
+    }
+    button{
+        font-size: 0.5em;
+    }
+
+    form.login{
+        height: 50vh;
+        border-radius: 1em;
+    }
+
+    form.register{
+        height: 70vh;
+    }
+
+    ul{
+        display:none;
+    }
+
+    .base-container{
+        flex-direction: column;
+    }
+
+    nav{
+        width: 100%;
+        height: 15vh;
+    }
+
+    nav > img{
+        width: 30%;
+    }
+
+    li:last-child{
+        position: relative;
+    }
+
+    .text-why{
+        font-size: 32px;
+    }
 }

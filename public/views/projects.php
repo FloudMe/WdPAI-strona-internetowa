@@ -27,7 +27,7 @@
                     <a href="#" class="button">forum</a>
                 </li>
 
-                <li>
+                <li class="end-text">
                     <i class="fas fa-address-card"></i>
                     <a href="#" class="button">profil</a>
                 </li>
@@ -35,21 +35,41 @@
         </nav>
         <main>
             <header>
-                <div class="search-bar">
-                    <form>
-                        <input placeholder="search project">
-                    </form>
-                </div>
-                <div class="add-project">
+                <div class="text-why">
                     Dlaczego warto zaadaptować zwierzaka?
                 </div>
             </header>
             <section class="projects">
-                <div>project 1</div>
-                <div>project 2</div>
-                <div>project 3</div>
-                <div>project 4</div>
-                <div>project 5</div>
+                <div>Oto 10 powodów dlaczego warto adoptować psa ze schroniska:</div>
+
+                <ol>
+                    <li>zyskasz wiernego przyjaciela,
+                        który nigdy Ciebie nie zawiedzie, nie zdradzi i będzie Ciebie kochał miłością bezwarunkową do końca swoich dni
+                    </li>
+                    <li>możesz ocalić mu życie,
+                        całkiem dosłownie możesz uratować pieskie życie – ciągle bowiem zdarzają się przypadki „humanitarnej” eutanazji, która bywa jedynym
+                        lekiem na przepełnione i niedofinansowane przytuliska
+                    </li>
+                    <li>poczujesz się dobrze,
+                        zważywszy na wszystkie fizyczne, psychiczne i emocjonalne korzyści związane z posiadaniem psa – masz szanse spotęgować je wielokrotnie
+                        - adoptując psiaka ze schroniska
+                    </li>
+                    <li>nie będziesz brał udziału w nieetycznej „produkcji” zwierząt,
+                        może dzięki temu choć jedna pseudo hodowla zamknie swoje czarne podboje
+                    </li>
+                    <li>zaoszczędzisz pieniądze,
+                        otrzymasz bowiem psiaka zupełnie za darmo, zaoszczędzając sporą kwotę, która zwykle wiąże się z zakupem psa u hodowcy
+                    </li>
+                    <li>otrzymasz zdrowego psiaka
+                        z pewnością Twój przyjaciel będzie zaszczepiony, odrobaczony, zachipowany i przebadany pod kątem ewentualnych chorób, o których
+                        dowiesz się przed adopcją - schroniska zwykle dbają o swoich podopiecznych - masz zatem gwarancje, że wszystkie
+                        potrzebne i konieczne zabiegi są wykonywane na czas
+                    </li>
+                    <li>
+                        // tekst z https://lalazoo.pl/blog/post/10-powodow-dla-ktorych-warto-adoptowa-psa-ze-schroniska
+                    </li>
+                </ol>
+
             </section>
         </main>
     </div>

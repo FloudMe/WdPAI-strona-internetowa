@@ -34,10 +34,26 @@ class ProjectController extends AppController {
             $project = new Project($_POST['title'], $_POST['description'], $_FILES['file']['name']);
             $this->projectRepository->addProject($project);
 
-            return $this->render("projects", ['messages' => $this->messages, 'project'=>$project]);
+            return $this->render("animals_category", ['messages' => $this->messages, 'category'=>$project]);
         }
 
         $this->render("addProject");
+    }
+
+    public function animalCategory()
+    {
+//        $animals_category = $this->projectRepository->getAnimalsCategory();
+//        $this->render('animalCategory', ['' => $animals_category]);
+        $this->render('animalCategory');
+    }
+
+    public function foundAnimals()
+    {
+//        $animals = $this->projectRepository->getProjects();
+//        $this->render('foundAnimal', ['animals' => $animals]);
+
+        $this->render('foundAnimals');
+
     }
 
     private function validate(array $file): bool

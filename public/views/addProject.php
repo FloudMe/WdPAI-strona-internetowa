@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/83463c4962.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
-    <link rel="stylesheet" type="text/css" href="public/css/project.css">
+    <link rel="stylesheet" type="text/css" href="public/css/addProject.css">
     <title>Projets</title>
 </head>
 <body>
@@ -36,13 +36,8 @@
     </nav>
     <main>
         <header>
-            <div class="search-bar">
-                <form>
-                    <input placeholder="search project">
-                </form>
-            </div>
-            <div class="add-project">
-                Dlaczego warto zaadaptować zwierzaka?
+            <div class="add-ad-text">
+                    Dodaj ogloszenie
             </div>
         </header>
         <section class="projects-form">
@@ -55,8 +50,17 @@
                    }
                }
                ?>
-               <input name="title" type="text" placeholder="title">
-               <textarea name="description" rows="5" placeholder="description"></textarea>
+               <input name="imie-psa" type="text" placeholder="imie psa">
+               <input name="addres" type="text" placeholder="adres">
+               <input name="locality" type="text" placeholder="miejscowosc">
+               <label for="coutry">Kraj</label>
+               <select name="country" id="coutry">
+                   <option value="polska">Polska</option>
+                   <option value="niemcy">Niemcy</option>
+                   <option value="francja">Francja</option>
+               </select>
+               <input name="phone-number" type="text" placeholder="numer telefonu">
+               <textarea name="description" rows="5" placeholder="opis"></textarea>
 
                <input type="file" name="file">
                <button type="subtmit">send</button>

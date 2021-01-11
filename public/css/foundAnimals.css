@@ -1,0 +1,87 @@
+header{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    padding: 2em;
+    overflow: auto;
+}
+
+.animals > div > img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1em 1em 0 0;
+}
+
+.animals > div > div {
+    height: 50%;
+    margin: 1em;
+    color: #2699FB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.animals > div {
+    border: 1px solid gray;
+    border-radius: 1em 1em 0 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section.project-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-form > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-section > i:hover {
+    cursor: pointer;
+}
+
+button{
+    display: flex;
+    width: 5vw;
+    justify-content: center;
+    justify-self: right;
+    text-align: center;
+
+    border: 2px solid #FF2C2C;
+    border-radius: 7px;
+    background: none;
+}
+
+@media only screen and (max-device-width: 420px) {
+
+    *{
+        font-size: 24px;
+    }
+    section{
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+        padding: 1em;
+        overflow: hidden;
+
+    }
+
+    .animals > div > img{
+        height: 40vh;
+        width: 70%;
+    }
+
+    button{
+        width: 10vw;
+    }
+}
