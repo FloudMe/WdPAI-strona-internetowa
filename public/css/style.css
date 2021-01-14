@@ -37,6 +37,11 @@ form.login{/*login.php*/
     border-radius: 3em;
 }
 
+.button-access{
+    display: flex;
+    width: 60%;
+}
+
 form.register {
     display: flex;
     flex-direction: column;
@@ -95,7 +100,11 @@ main{ /*projects.php*/
     width: 80vw;
 }
 
-nav > img{ /*projects.php*/
+.logo_a{
+    display: flex;
+}
+
+.logo_a > img{ /*projects.php*/
     width: 45%;
     margin: 0em auto;
 }
@@ -236,8 +245,9 @@ header{/*projects.php*/
         height: 15vh;
     }
 
-    nav > img{
+    .logo_a > img{
         width: 30%;
+        height: auto;
     }
 
     li:last-child{
@@ -246,5 +256,11 @@ header{/*projects.php*/
 
     .text-why{
         font-size: 32px;
+    }
+
+    .button-access{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }

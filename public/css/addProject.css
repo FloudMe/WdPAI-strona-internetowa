@@ -1,6 +1,52 @@
 .add-ad-text{
+    font-size: 35px;
     margin-left: auto;
     margin-right: auto;
+}
+
+section.projects-form{
+    height: 100%;
+}
+
+form{
+    display: flex;
+    height: 80%;
+    padding: 2em;
+}
+
+form > div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.select-country{
+    margin-left: 1em;
+}
+
+.select-country > select{
+    width: 20%;
+    padding: 0.5em;
+}
+
+form > div > button{
+    width: 30%;
+    margin-left: 20%;
+    margin-right: auto;
+    margin-top: 7em;
+
+    box-shadow: 5px 3px 6px #00000029;
+    border: 2px solid #FF2C2C;
+    border-radius: 22px;
+    opacity: 1;
+}
+
+input, textarea, select{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D2B235;
+    border-radius: 4px;
+    opacity: 1;
+    padding: 2em;
 }
 
 @media only screen and (max-device-width: 420px) {
@@ -8,6 +54,23 @@
     form{
         display: flex;
         flex-direction: column;
+        padding: 0em;
+    }
+
+    form > div{
+        width: 90%;
+    }
+
+    form > div > button{
+        margin-top: 1em;
+    }
+
+    .select-country{
+        margin-left: 0.5em;
+    }
+
+    .select-country > select{
+        width: 96%;
     }
 
     input, textarea{
@@ -16,6 +79,10 @@
 
     *{
         font-size:24px;
+    }
+
+    header{
+        padding: 1em 1em;
     }
 
 }

@@ -11,16 +11,18 @@
 <body>
     <div class="base-container">
         <nav>
-            <img src="public/img/logo.svg">
+            <a href="projects" class="logo_a">
+                <img src="public/img/logo.svg" class="svg_logo">
+            </a>
             <ul>
                 <li>
                     <i class="fas fa-paw"></i>
-                    <a href="#" class="button">kategorie zwierzakow</a>
+                    <a href="animalCategory" class="button">kategorie zwierzakow</a>
                 </li>
 
                 <li>
                     <i class="fas fa-plus"></i>
-                    <a href="#" class="button">dodaj ogloszenie</a>
+                    <a href="addProject" class="button">dodaj ogloszenie</a>
                 </li>
 
                 <li>

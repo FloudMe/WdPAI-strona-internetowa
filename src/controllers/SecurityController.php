@@ -54,6 +54,11 @@ class SecurityController extends AppController
         $name = $_POST['name'];
         $surname = $_POST['surname'];
 
+        if($email == null || $name == null || $surname == null)
+        {
+            return $this->render('register', ['messages'=> ['Please provide data']]);
+        }
+
         if ($password !== $confirmedPassword) {
             return $this->render('register', ['messages' => ['Please provide proper password']]);
         }

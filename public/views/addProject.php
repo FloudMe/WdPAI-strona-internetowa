@@ -6,21 +6,24 @@
     <script src="https://kit.fontawesome.com/83463c4962.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
     <link rel="stylesheet" type="text/css" href="public/css/addProject.css">
-    <title>Projets</title>
+    <title>addProjects</title>
 </head>
 <body>
 <div class="base-container">
     <nav>
-        <img src="public/img/logo.svg">
+        <a href="projects" class="logo_a">
+            <img src="public/img/logo.svg" class="svg_logo">
+        </a>
+
         <ul>
             <li>
                 <i class="fas fa-paw"></i>
-                <a href="#" class="button">kategorie zwierzakow</a>
+                <a href="animalCategory" class="button">kategorie zwierzakow</a>
             </li>
 
             <li>
                 <i class="fas fa-plus"></i>
-                <a href="#" class="button">dodaj ogloszenie</a>
+                <a href="addProject" class="button">dodaj ogloszenie</a>
             </li>
 
             <li>
@@ -50,20 +53,28 @@
                    }
                }
                ?>
-               <input name="imie-psa" type="text" placeholder="imie psa">
-               <input name="addres" type="text" placeholder="adres">
-               <input name="locality" type="text" placeholder="miejscowosc">
-               <label for="coutry">Kraj</label>
-               <select name="country" id="coutry">
-                   <option value="polska">Polska</option>
-                   <option value="niemcy">Niemcy</option>
-                   <option value="francja">Francja</option>
-               </select>
-               <input name="phone-number" type="text" placeholder="numer telefonu">
-               <textarea name="description" rows="5" placeholder="opis"></textarea>
+               <div>
+                   <input name="imie-psa" type="text" placeholder="imie zwierzecia">
+                   <input name="addres" type="text" placeholder="adres">
+                   <input name="locality" type="text" placeholder="miejscowosc">
+                   <div class="select-country">
+                       <label for="coutry">Kraj</label>
+                       <select name="country" id="coutry">
+                           <option value="polska">Polska</option>
+                           <option value="niemcy">Niemcy</option>
+                           <option value="francja">Francja</option>
+                       </select>
+                   </div>
+                   <input name="phone-number" type="text" placeholder="numer telefonu">
+               </div>
+               <div>
+                   <textarea name="description" rows="5" placeholder="opis"></textarea>
 
-               <input type="file" name="file">
-               <button type="subtmit">send</button>
+                   <input type="file" name="file">
+
+                   <button type="subtmit">send</button>
+               </div>
+
            </form>
         </section>
     </main>

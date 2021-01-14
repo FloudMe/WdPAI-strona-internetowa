@@ -21,18 +21,16 @@
   <component name="ChangeListManager">
     <list default="true" id="0203daba-31eb-4e31-9014-f547a5560b8e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/addProject.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/addProject.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/foundAnimals.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/foundAnimals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/project.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/project.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/views/addProject.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/addProject.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/animalCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/animalCategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/foundAnimals.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/foundAnimals.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/views/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/views/projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/projects.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/views/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ProjectController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Project.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/ProjectRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/ProjectRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/UserRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +68,10 @@
       <workItem from="1609603436890" duration="4230000" />
       <workItem from="1610193502169" duration="226000" />
       <workItem from="1610291113567" duration="1123000" />
-      <workItem from="1610294504323" duration="22211000" />
+      <workItem from="1610294504323" duration="22284000" />
+      <workItem from="1610533390448" duration="3784000" />
+      <workItem from="1610562124332" duration="119000" />
+      <workItem from="1610621482398" duration="1915000" />
     </task>
     <servers />
   </component>
