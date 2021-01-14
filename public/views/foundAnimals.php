@@ -13,6 +13,7 @@
         <nav>
             <a href="projects" class="logo_a">
                 <img src="public/img/logo.svg" class="svg_logo">
+                <i class="fas fa-bars"></i>
             </a>
             <ul>
                 <li>
@@ -42,28 +43,29 @@
                 Znalezione zwierzeta
                 </div>
             </header>
+            <hr width="100%" size="1" color="black">
             <section class="animals">
-                <div class="animal-1">
-                    <img src="../uploads/comment_1608609835eLDV4H3EmcT19LQhjcuB3s,w400.jpg">
-                    <div>
-
-                        <h2>Nazwa zwierzeta</h2>
-                        <p>opis</p>
-                        <div class="button-view">
-                            <button>view</button>
-                        </div>
-
-                    </div>
-                </div>
-<!--                --><?php //foreach ($animals as $animal): ?>
-<!--                    <div id="--><?//= $animal->getId(); ?><!--">-->
-<!--                        <img src="public/uploads/--><?//= $animal->getImage(); ?><!--">-->
-<!--                        <div>-->
-<!--                            <h2>--><?//= $animal->getTitle(); ?><!--</h2>-->
-<!--                            <p>--><?//= $animal->getDescription(); ?><!--</p>-->
+<!--                <div class="animal-1">-->
+<!--                    <img src="../uploads/comment_1608609835eLDV4H3EmcT19LQhjcuB3s,w400.jpg">-->
+<!--                    <div>-->
+<!---->
+<!--                        <h2>Nazwa zwierzeta</h2>-->
+<!--                        <p>opis</p>-->
+<!--                        <div class="button-view">-->
+<!--                            <button>view</button>-->
 <!--                        </div>-->
+<!---->
 <!--                    </div>-->
-<!--                --><?php //endforeach; ?>
+<!--                </div>-->
+                <?php foreach ($animals as $animal): ?>
+                    <div id="<?= $animal->getId(); ?>">
+                        <img src="public/uploads/<?= $animal->getImage(); ?>">
+                        <div>
+                            <h2><?= $animal->getTitle(); ?></h2>
+                            <p><?= $animal->getDescription(); ?></p>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
 
             </section>
         </main>

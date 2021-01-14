@@ -42,17 +42,17 @@ class ProjectController extends AppController {
 
     public function animalCategory()
     {
-//        $animals_category = $this->projectRepository->getAnimalsCategory();
-//        $this->render('animalCategory', ['' => $animals_category]);
-        $this->render('animalCategory');
+        $animals_category = $this->projectRepository->getAnimalsCategory();
+        $this->render('animalCategory', ['animals_category' => $animals_category]);
+//        $this->render('animalCategory');
     }
 
     public function foundAnimals()
     {
-//        $animals = $this->projectRepository->getProjects();
-//        $this->render('foundAnimal', ['animals' => $animals]);
+        $animals = $this->projectRepository->getProjects();
+        $this->render('foundAnimals', ['animals' => $animals]);
 
-        $this->render('foundAnimals');
+//        $this->render('foundAnimals');
 
     }
 

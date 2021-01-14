@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/83463c4962.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
+
+    <script type="text/javascript" src="./public/js/script.js" defer></script>
     <title>Projets</title>
 </head>
 <body>
@@ -12,6 +14,7 @@
         <nav>
             <a href="projects" class="logo_a">
                 <img src="public/img/logo.svg" class="svg_logo">
+                <i class="fas fa-bars"></i>
             </a>
             <ul>
                 <li>
@@ -34,13 +37,16 @@
                     <a href="#" class="button">profil</a>
                 </li>
             </ul>
+
         </nav>
         <main>
             <header>
                 <div class="text-why">
                     Dlaczego warto zaadaptować zwierzaka?
                 </div>
+
             </header>
+            <hr width="100%" size="1" color="black">
             <section class="projects">
                 <div>Oto 10 powodów dlaczego warto adoptować psa ze schroniska:</div>
 

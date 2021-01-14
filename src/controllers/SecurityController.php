@@ -7,10 +7,16 @@ require_once __DIR__.'/../repository/UserRepository.php';
 class SecurityController extends AppController
 {
 
+    private $userRepository;
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->userRepository = new UserRepository();
+    }
+
     public function login()
     {
-        $userRepository = new UserRepository();
-
         if(!$this->isPost())
         {
             return $this->render('login');
@@ -19,7 +25,7 @@ class SecurityController extends AppController
         $email = $_POST['email'];
         $password = $_POST['password'];
 
-        $user =$userRepository->getUser($email);
+        $user = $this->userRepository->getUser($email);
 
         if(!$user)
         {
@@ -66,7 +72,13 @@ class SecurityController extends AppController
         //TODO try to use better hash function
         $user = new User($email, md5($password), $name, $surname);
 
-        $this->userRepository->addUser($user);
+        try {
+            $this->userRepository->addUser($user);
+        }
+        catch (PDOException $e){
+            return $this->render('register', ['messages' => ['Email occupied']]);
+        }
+
 
         return $this->render('login', ['messages' => ['You\'ve been succesfully registrated!']]);
     }

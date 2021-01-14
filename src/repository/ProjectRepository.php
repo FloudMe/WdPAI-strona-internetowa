@@ -1,6 +1,7 @@
 <?php
 
 require_once "Repository.php";
+require_once __DIR__.'/../models/AnimalsCategory.php';
 require_once __DIR__.'/../models/Project.php';
 
 class ProjectRepository extends Repository
@@ -8,7 +9,7 @@ class ProjectRepository extends Repository
     public function getProject(int $id): ?Project
     {
         $stmt = $this->database->connect()->prepare('
-            SELECT * FROM project WHERE id = :id
+            SELECT * FROM "animal" WHERE id = :id
         '
         );
 
@@ -38,7 +39,7 @@ class ProjectRepository extends Repository
         $result = [];
 
         $stmt = $this->database->connect()->prepare('
-            SELECT * FROM Animal;
+            SELECT * FROM "animal";
         ');
         $stmt->execute();
         $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -59,7 +60,7 @@ class ProjectRepository extends Repository
     {
         $date = new DateTime();
         $stmt = $this->database->connect()->prepare('
-        INSERT INTO Animal (id_animal_category, id_user, "name", description, image)
+        INSERT INTO "animal" (id_animal_category, id_user, "name", description, image)
         VALUES (?,?,?,?,?)'
         );
 
@@ -78,7 +79,7 @@ class ProjectRepository extends Repository
     {
 
         $stmt = $this->database->connect()->prepare('
-            SELECT * FROM AnimalCategory
+            SELECT * FROM "Animal_category"
         ');
         $stmt->execute();
         $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -86,7 +87,8 @@ class ProjectRepository extends Repository
             $result[] = new AnimalsCategory(
                 $project['id'],
                 $project['name'],
-                $project['description']
+                $project['description'],
+                $project['image']
             );
         }
         return $result;

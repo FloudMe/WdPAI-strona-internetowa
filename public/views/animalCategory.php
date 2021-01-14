@@ -13,6 +13,7 @@
     <nav>
         <a href="projects" class="logo_a">
             <img src="public/img/logo.svg" class="svg_logo">
+            <i class="fas fa-bars"></i>
         </a>
         <ul>
             <li>
@@ -40,27 +41,30 @@
         <header>
             Kategorie zwierzakow
         </header>
+        <hr width="100%" size="1" color="black">
         <section class="category">
-            <div class="category-1">
-                <img src="../uploads/comment_1608609835eLDV4H3EmcT19LQhjcuB3s,w400.jpg">
-                <div>
-
-                    <h2>Nazwa zwierzeta</h2>
-                    <p>opis</p>
-                    <button>view</button>
-
-                </div>
-            </div>
-
-<!--            --><?php //foreach ($animals_category as $category): ?>
-<!--                <div id="--><?//= $category->getId(); ?><!--">-->
-<!--                    <img src="public/uploads/--><?//= $category->getImage(); ?><!--">-->
-<!--                    <div>-->
-<!--                        <h2>--><?//= $category->getTitle(); ?><!--</h2>-->
-<!--                        <p>--><?//= $category->getDescription(); ?><!--</p>-->
-<!--                    </div>-->
+<!--            <div class="category-1">-->
+<!--                <img src="../uploads/comment_1608609835eLDV4H3EmcT19LQhjcuB3s,w400.jpg">-->
+<!--                <div>-->
+<!---->
+<!--                    <h2>Nazwa zwierzeta</h2>-->
+<!--                    <p>opis</p>-->
+<!--                    <button>view</button>-->
+<!---->
 <!--                </div>-->
-<!--            --><?php //endforeach; ?>
+<!--            </div>-->
+
+            <?php foreach ($animals_category as $category): ?>
+                <div id="<?= $category->getId(); ?>">
+                    <img src="public/uploads/<?= $category->getImage(); ?>">
+                    <div>
+                        <h2><?= $category->getName(); ?></h2>
+                        <p><?= $category->getDescription(); ?></p>
+
+                        <button>view</button>
+                    </div>
+                </div>
+            <?php endforeach; ?>
         </section>
     </main>
 </div>

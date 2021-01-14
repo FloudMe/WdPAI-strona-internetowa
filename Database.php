@@ -23,10 +23,10 @@ class Database
         try
         {
             $conn = new PDO(
-              "psql:host=$this->host;port=5432;dbname=$this->database",
+                "pgsql:host=$this->host;port=5432;dbname=$this->database",
                 $this->username,
                 $this->password,
-                ["sslmode" => "prefer"]
+                ["sslmode"  => "prefer"]
             );
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 

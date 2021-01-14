@@ -13,6 +13,7 @@
     <nav>
         <a href="projects" class="logo_a">
             <img src="public/img/logo.svg" class="svg_logo">
+            <i class="fas fa-bars"></i>
         </a>
 
         <ul>
@@ -43,6 +44,7 @@
                     Dodaj ogloszenie
             </div>
         </header>
+        <hr width="100%" size="1" color="black">
         <section class="projects-form">
            <form action="addProject" method="POST" enctype="multipart/form-data">
                <?php if(isset($messages))

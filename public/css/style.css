@@ -194,6 +194,20 @@ header{/*projects.php*/
     margin-right: auto;
 }
 
+.fa-bars{
+    display: none;
+}
+
+.projects{
+    font-size: 30px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 30px;
+    opacity: 1;
+    margin: 1em 1em 0 1em;
+    height: 100%;
+}
+
 @media only screen and (max-device-width: 420px){/*login.php*/
     .container{
         flex-direction: column;
@@ -262,5 +276,21 @@ header{/*projects.php*/
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .fa-bars{
+        display: flex;
+        align-items: center;
+        margin-left: 10em;
+        margin-right: 1em;
+    }
+
+    .projects{
+        margin: 0;
+        height: auto;
     }
 }
