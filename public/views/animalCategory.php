@@ -37,7 +37,7 @@
                         <h2><?= $category->getName(); ?></h2>
                         <p><?= $category->getDescription(); ?></p>
 
-                        <button>view</button>
+                        <button onclick="location.href='foundAnimal'" type="button">view</button>
                     </div>
                 </div>
             <?php endforeach; ?>

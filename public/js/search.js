@@ -2,7 +2,6 @@ const search = document.querySelector('input[placeholder="search animal"]');
 const projectContainer = document.querySelector(".animals")
 
 search.addEventListener("keyup", function (event) {
-    console.log("git");
     if (event.key === "Enter") {
         event.preventDefault();
 
@@ -28,25 +27,23 @@ function loadProjects(projects) {
         console.log(project);
         createProject(project);
     });
-    console.log("git2");
 }
 
 function createProject(project) {
-    const template = document.querySelector("#project-template");
+    const template = document.querySelector("#animal-template");
 
     const clone = template.content.cloneNode(true);
+
     const div = clone.querySelector("div");
     div.id = project.id;
     const image = clone.querySelector("img");
     image.src = `/public/uploads/${project.image}`;
+
     const title = clone.querySelector("h2");
-    title.innerHTML = project.title;
+    title.innerHTML = project.name;
+
     const description = clone.querySelector("p");
     description.innerHTML = project.description;
-    const like = clone.querySelector(".fa-heart");
-    like.innerText = project.like;
-    const dislike = clone.querySelector(".fa-minus-square");
-    dislike.innerText = project.dislike;
 
     projectContainer.appendChild(clone);
 

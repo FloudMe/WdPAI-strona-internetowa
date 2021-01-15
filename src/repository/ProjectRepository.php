@@ -127,7 +127,7 @@ class ProjectRepository extends Repository
         $searchString = '%' . strtolower($searchString) . '%';
 
         $stmt = $this->database->connect()->prepare('
-            SELECT * FROM projects WHERE LOWER(title) LIKE :search OR LOWER(description) LIKE :search
+            SELECT * FROM "Animal" WHERE LOWER(name) LIKE :search OR LOWER(description) LIKE :search
         ');
         $stmt->bindParam(':search', $searchString, PDO::PARAM_STR);
         $stmt->execute();
