@@ -13,5 +13,7 @@ Routing::post('addProject', 'ProjectController');
 Routing::post('register', 'SecurityController');
 Routing::post('animalCategory', 'ProjectController');
 Routing::post('foundAnimals', 'ProjectController');
+Routing::post('addCategory', 'ProjectController');
+Routing::get('logout','SecurityController');
 
 Routing::run($path);

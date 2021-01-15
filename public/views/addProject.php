@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<?php //if(isset($_COOKIE['user'])):?>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,34 +12,7 @@
 </head>
 <body>
 <div class="base-container">
-    <nav>
-        <a href="projects" class="logo_a">
-            <img src="public/img/logo.svg" class="svg_logo">
-            <i class="fas fa-bars"></i>
-        </a>
-
-        <ul>
-            <li>
-                <i class="fas fa-paw"></i>
-                <a href="animalCategory" class="button">kategorie zwierzakow</a>
-            </li>
-
-            <li>
-                <i class="fas fa-plus"></i>
-                <a href="addProject" class="button">dodaj ogloszenie</a>
-            </li>
-
-            <li>
-                <i class="fas fa-comments"></i>
-                <a href="#" class="button">forum</a>
-            </li>
-
-            <li>
-                <i class="fas fa-address-card"></i>
-                <a href="#" class="button">profil</a>
-            </li>
-        </ul>
-    </nav>
+    <?php include 'nav.php'?>
     <main>
         <header>
             <div class="add-ad-text">
@@ -56,8 +31,8 @@
                }
                ?>
                <div>
-                   <input name="imie-psa" type="text" placeholder="imie zwierzecia">
-                   <input name="addres" type="text" placeholder="adres">
+                   <input name="name-animal" type="text" placeholder="imie zwierzecia">
+                   <input name="address" type="text" placeholder="adres">
                    <input name="locality" type="text" placeholder="miejscowosc">
                    <div class="select-country">
                        <label for="coutry">Kraj</label>
@@ -82,4 +57,10 @@
     </main>
 </div>
 </body>
-</html>
+
+<?php //else: ?>
+<?//
+//$url = "http://$_SERVER[HTTP_HOST]";
+//header("Location: {$url}/");
+//return $this->render('login');?>
+<?php //endif; ?>

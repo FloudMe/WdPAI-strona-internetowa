@@ -30,7 +30,11 @@ class ProjectRepository extends Repository
             $project['image'],
             $project['id'],
             $project['id_animal_category'],
-            $project['id_user']
+            $project['id_user'],
+            $project['address'],
+            $project['country'],
+            $project['place'],
+            $project['phone']
         );
     }
 
@@ -39,18 +43,22 @@ class ProjectRepository extends Repository
         $result = [];
 
         $stmt = $this->database->connect()->prepare('
-            SELECT * FROM "animal";
+            SELECT * FROM "Animal";
         ');
         $stmt->execute();
         $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
          foreach ($projects as $project) {
              $result[] = new Project(
-                 $project['title'],
+                 $project['name'],
                  $project['description'],
                  $project['image'],
                  $project['id'],
                  $project['id_animal_category'],
-                 $project['id_user']
+                 $project['id_user'],
+                 $project['address'],
+                 $project['country'],
+                 $project['place'],
+                 $project['phone']
              );
          }
        return $result;
@@ -60,8 +68,8 @@ class ProjectRepository extends Repository
     {
         $date = new DateTime();
         $stmt = $this->database->connect()->prepare('
-        INSERT INTO "animal" (id_animal_category, id_user, "name", description, image)
-        VALUES (?,?,?,?,?)'
+        INSERT INTO "Animal" (id_animal_category, id_user, "name", address, place, country, phone, description, image)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)'
         );
 
         $assignedBy = 1;
@@ -69,9 +77,13 @@ class ProjectRepository extends Repository
         $stmt->execute([
            $project->getIdAnimalCategory(),
            $project->getIdUser(),
-           $project->getTitle(),
+           $project->getTitle(), //name
+            $project->getAddress(),
+           $project->getPlace(),
+           $project->getCountry(),
+           $project->getPhone(),
            $project-> getDescription(),
-           $project->getImage()
+           $project->getImage(),
         ]);
     }
 
@@ -92,5 +104,21 @@ class ProjectRepository extends Repository
             );
         }
         return $result;
+    }
+
+    public function addCategory(AnimalsCategory $animalCategory)
+    {
+        $stmt = $this->database->connect()->prepare('
+        INSERT INTO "Animal_category" ("name", description, image)
+        VALUES (?, ?, ?)'
+        );
+
+        $assignedBy = 1;
+
+        $stmt->execute([
+            $animalCategory->getName(),
+            $animalCategory->getDescription(),
+            $animalCategory->getImage()
+        ]);
     }
 }

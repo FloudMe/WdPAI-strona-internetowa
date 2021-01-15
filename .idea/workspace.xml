@@ -21,20 +21,21 @@
   <component name="ChangeListManager">
     <list default="true" id="0203daba-31eb-4e31-9014-f547a5560b8e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/Database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/project.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/project.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/foundAnimals.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/foundAnimals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/views/addProject.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/addProject.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/views/animalCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/animalCategory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/views/foundAnimals.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/foundAnimals.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/views/projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/projects.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AppController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/register.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ProjectController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/SecurityController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/AnimalsCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/AnimalsCategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Project.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/repository/ProjectRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/ProjectRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/UserRepository.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +76,8 @@
       <workItem from="1610294504323" duration="22284000" />
       <workItem from="1610533390448" duration="3784000" />
       <workItem from="1610562124332" duration="119000" />
-      <workItem from="1610621482398" duration="15673000" />
+      <workItem from="1610621482398" duration="15681000" />
+      <workItem from="1610699545229" duration="17552000" />
     </task>
     <servers />
   </component>
@@ -103,46 +105,58 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="946" y="0" width="974" height="1040" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610632780043" />
-    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1610632095576">
+    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1610708483221">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1610632095576" />
-    <state x="1213" y="247" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1609589380422">
+    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1610708483221" />
+    <state x="979" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610705844634">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1213" y="247" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609589380422" />
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1610639195586">
+    <state x="979" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610705844634" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610705834236">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610639195586" />
-    <state width="1293" height="282" key="GridCell.Tab.0.center" timestamp="1610639195586">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610705834236" />
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1610714850917">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610639195586" />
-    <state width="1293" height="282" key="GridCell.Tab.0.left" timestamp="1610639195586">
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610714850917" />
+    <state width="1293" height="282" key="GridCell.Tab.0.center" timestamp="1610714850917">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610639195586" />
-    <state width="1293" height="282" key="GridCell.Tab.0.right" timestamp="1610639195586">
+    <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610714850917" />
+    <state width="1293" height="282" key="GridCell.Tab.0.left" timestamp="1610714850915">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610639195586" />
-    <state x="1165" y="246" key="NewPhpClassDialog" timestamp="1610370292718">
+    <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610714850915" />
+    <state width="1293" height="282" key="GridCell.Tab.0.right" timestamp="1610714850917">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1165" y="246" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610370292718" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1610292263748">
+    <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610714850917" />
+    <state x="1165" y="246" key="NewPhpClassDialog" timestamp="1610717284391">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610292263748" />
-    <state x="834" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1610632242173">
+    <state x="1165" y="246" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610717284391" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1610714329607">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="834" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040@0.0.1920.1040" timestamp="1610632242173" />
-    <state x="818" y="188" width="629" height="664" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1610639113870">
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610714329607" />
+    <state x="834" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1610703638761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="818" y="188" width="629" height="664" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610639113870" />
+    <state x="834" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040@0.0.1920.1040" timestamp="1610703638761" />
+    <state x="756" y="340" width="408" height="355" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1610706304510">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="756" y="340" width="408" height="355" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610706304510" />
+    <state x="859" y="461" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1610706591783">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="859" y="461" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.1920.1040@0.0.1920.1040" timestamp="1610706591783" />
+    <state x="887" y="249" width="629" height="664" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1610717440509">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="887" y="249" width="629" height="664" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610717440509" />
     <state x="667" y="76" width="585" height="888" key="find.popup" timestamp="1610626622394">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

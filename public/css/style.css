@@ -186,6 +186,7 @@ header{/*projects.php*/
 
 .projects{
     font-size: 30px;
+    overflow: auto;
 }
 
 .text-why{

@@ -7,13 +7,25 @@ class User
     private $password;
     private $name;
     private $surname;
+    private $enable;
 
-    public function __construct(string $email, string $password, string $name, string $surname)
+    public function __construct(string $email, string $password, string $name, string $surname, string $enable)
     {
         $this->email = $email;
         $this->password = $password;
         $this->name = $name;
         $this->surname = $surname;
+        $this->enable = $enable;
+    }
+
+    public function getEnable(): string
+    {
+        return $this->enable;
+    }
+
+    public function setEnable(string $enable): void
+    {
+        $this->enable = $enable;
     }
 
     public function getEmail(): string

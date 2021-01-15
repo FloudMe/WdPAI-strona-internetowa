@@ -8,7 +8,7 @@ class AnimalsCategory
     private $description;
     private $image;
 
-    public function __construct(int $id, string $name, string $description, string $image)
+    public function __construct(int $id = null, string $name, string $description, string $image)
     {
         $this->id = $id;
         $this->name = $name;
