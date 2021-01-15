@@ -15,7 +15,7 @@ class SecurityController extends AppController
     {
         parent::__construct();
         $this->userRepository = new UserRepository();
-        $this->logsRepository = new LogsRepository();
+        $this->logsRepository = new LogRepository();
     }
 
     public function login()

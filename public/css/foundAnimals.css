@@ -64,6 +64,16 @@ button{
     background: none;
 }
 
+.search-bar {
+    width: 70%;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+}
+
+
 @media only screen and (max-device-width: 420px) {
 
     *{

@@ -2,7 +2,7 @@
 
 require_once 'Repository.php';
 
-class LogsRepository extends Repository {
+class LogRepository extends Repository {
     public function addLog($id, $data) : void {
         $stmt = $this->database->connect()->prepare('
             INSERT INTO "Log" (id_users, browser, datetime, device, "status") 

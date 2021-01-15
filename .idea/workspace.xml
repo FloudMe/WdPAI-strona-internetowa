@@ -23,19 +23,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/foundAnimals.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/foundAnimals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/views/addProject.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/addProject.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/views/animalCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/animalCategory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/views/foundAnimals.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/foundAnimals.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/views/projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/projects.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/views/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/register.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ProjectController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/AnimalsCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/AnimalsCategory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Project.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/LogRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/LogRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/repository/ProjectRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/ProjectRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/UserRepository.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +69,7 @@
       <workItem from="1610533390448" duration="3784000" />
       <workItem from="1610562124332" duration="119000" />
       <workItem from="1610621482398" duration="15681000" />
-      <workItem from="1610699545229" duration="17552000" />
+      <workItem from="1610699545229" duration="20934000" />
     </task>
     <servers />
   </component>
@@ -153,10 +145,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="859" y="461" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.1920.1040@0.0.1920.1040" timestamp="1610706591783" />
-    <state x="887" y="249" width="629" height="664" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1610717440509">
+    <state x="887" y="249" width="629" height="664" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1610717905437">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="887" y="249" width="629" height="664" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610717440509" />
+    <state x="887" y="249" width="629" height="664" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610717905437" />
     <state x="667" y="76" width="585" height="888" key="find.popup" timestamp="1610626622394">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
