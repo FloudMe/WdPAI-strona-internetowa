@@ -57,8 +57,8 @@ class UserRepository extends Repository
             $user->getEmail(),
             $user->getPassword(),
             $this->getUserDetailsId($user),
-            1,
-            data,
+            0,
+            $date->format("Y-m-d H:i:s"),
             null
         ]);
     }

@@ -209,6 +209,20 @@ header{/*projects.php*/
     height: 100%;
 }
 
+.logout_form{
+    height:5%;
+    background: none;
+    display: flex;
+    padding: 2em;
+}
+
+.logout-button{
+    background: none;
+    box-shadow: 5px 3px 6px #00000029;
+    border: 2px solid #FF2C2C;
+    border-radius: 1em;
+}
+
 @media only screen and (max-device-width: 420px){/*login.php*/
     .container{
         flex-direction: column;

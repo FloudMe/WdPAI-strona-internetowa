@@ -13,15 +13,19 @@ class ProjectController extends AppController {
 
     private $messages = [];
     private $projectRepository;
+    private $userRepository;
 
     public function __construct()
     {
         parent::__construct();
         $this->projectRepository = new ProjectRepository();
+        $this->userRepository = new UserRepository();
     }
 
     public function addProject()
     {
+        $animal_category = $this->projectRepository->getAnimalsCategory();
+
         if ($this->isPost()
             && is_uploaded_file($_FILES['file']['tmp_name'])
             && $this->validate($_FILES['file']))
@@ -31,17 +35,17 @@ class ProjectController extends AppController {
                 $_FILES['file']['tmp_name'],
                 dirname(__DIR__).self::UPLOAD_DIRECTORY.$_FILES['file']['name']
             );
-
+            $user = $this->userRepository->getUser($_COOKIE['user']);
             //string $title, string $description, string $image, int $id=null,
             // int $id_animal_category=null, int $id_user=null, string $address, string $country, string $place, string $phone
             $project = new Project($_POST['name-animal'], $_POST['description'], $_FILES['file']['name'], null,
-                null,null, $_POST['address'], $_POST['country'], $_POST['locality'], $_POST['phone-number']);
+                $_POST['category-animal'], $this->userRepository->getUserDetailsId($user),
+                $_POST['address'], $_POST['country'], $_POST['locality'], $_POST['phone-number']);
             $this->projectRepository->addProject($project);
 
-            return $this->render("animalCategory", ['messages' => $this->messages, 'projects-form'=>$project]);
+            return $this->render("addProject", ['messages' => ['Ad has been successfully added'], 'animals_category' => $animal_category]);
         }
-
-        $this->render("addProject");
+        $this->render("addProject", ['animals_category' => $animal_category]);
     }
 
     public function animalCategory()
@@ -51,9 +55,14 @@ class ProjectController extends AppController {
 //        $this->render('animalCategory');
     }
 
-    public function foundAnimals()
+    public function foundAnimals($id)
     {
-        $animals = $this->projectRepository->getProjects();
+        if($id == null){
+            $animals = $this->projectRepository->getProjects();
+        }
+        else{
+            $animals = $this->projectRepository->getProjectsById($id);
+        }
         $this->render('foundAnimals', ['animals' => $animals]);
 
 //        $this->render('foundAnimals');

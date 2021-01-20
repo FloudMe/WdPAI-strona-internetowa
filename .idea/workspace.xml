@@ -21,10 +21,18 @@
   <component name="ChangeListManager">
     <list default="true" id="0203daba-31eb-4e31-9014-f547a5560b8e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Routing.php" beforeDir="false" afterPath="$PROJECT_DIR$/Routing.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/addProject.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/addProject.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/project.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/project.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/addCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/addCategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/addProject.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/addProject.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/views/animalCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/animalCategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/nav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/SecurityController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/repository/ProjectRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/ProjectRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/UserRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +74,11 @@
       <workItem from="1610533390448" duration="3784000" />
       <workItem from="1610562124332" duration="119000" />
       <workItem from="1610621482398" duration="15681000" />
-      <workItem from="1610699545229" duration="22548000" />
+      <workItem from="1610699545229" duration="26297000" />
+      <workItem from="1610789511308" duration="3199000" />
+      <workItem from="1610794154820" duration="1662000" />
+      <workItem from="1610982786350" duration="2830000" />
+      <workItem from="1611133231368" duration="1326000" />
     </task>
     <servers />
   </component>
@@ -86,6 +98,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="705" y="344" key="#Notifications" timestamp="1610792151238">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="705" y="344" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1610792151238" />
     <state x="673" y="361" key="#SQL_Dialects" timestamp="1610632619048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -106,22 +122,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610705834236" />
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1610714850917">
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1610792447675">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610714850917" />
-    <state width="1293" height="282" key="GridCell.Tab.0.center" timestamp="1610714850917">
+    <state width="1293" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610792447675" />
+    <state width="1293" height="282" key="GridCell.Tab.0.center" timestamp="1610792447674">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610714850917" />
-    <state width="1293" height="282" key="GridCell.Tab.0.left" timestamp="1610714850915">
+    <state width="1293" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610792447674" />
+    <state width="1293" height="282" key="GridCell.Tab.0.left" timestamp="1610792447674">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610714850915" />
-    <state width="1293" height="282" key="GridCell.Tab.0.right" timestamp="1610714850917">
+    <state width="1293" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610792447674" />
+    <state width="1293" height="282" key="GridCell.Tab.0.right" timestamp="1610792447674">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610714850917" />
+    <state width="1293" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610792447674" />
     <state x="1165" y="246" key="NewPhpClassDialog" timestamp="1610717284391">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -130,6 +146,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610714329607" />
+    <state x="825" y="363" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1610792440723">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="825" y="363" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1920.1040@0.0.1920.1040" timestamp="1610792440723" />
     <state x="834" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1610703638761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

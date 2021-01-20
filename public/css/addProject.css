@@ -20,11 +20,12 @@ form > div{
     width: 50%;
 }
 
-.select-country{
+.select-country, .select-category-animal{
     margin-left: 1em;
+    margin-top: 1em;
 }
 
-.select-country > select{
+.select-country > select, .select-category-animal > select{
     width: 20%;
     padding: 0.5em;
 }

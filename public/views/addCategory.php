@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<?php //if(isset($_COOKIE['user'])):?>
+<?php if(isset($_COOKIE['user'])):?>
 
 <head>
     <meta charset="UTF-8">
@@ -45,9 +45,9 @@
 </div>
 </body>
 
-<?php //else: ?>
-<?//
-//$url = "http://$_SERVER[HTTP_HOST]";
-//header("Location: {$url}/");
-//return $this->render('login');?>
-<?php //endif; ?>
+<?php else: ?>
+<?
+$url = "http://$_SERVER[HTTP_HOST]";
+header("Location: {$url}/");
+return $this->render('login');?>
+<?php endif; ?>

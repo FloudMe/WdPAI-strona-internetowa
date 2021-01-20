@@ -22,7 +22,7 @@
         <?php if(isset($_COOKIE['user'])):?>
             <?php
             $userRepository = new UserRepository();
-            $user = $userRepository->getUser($_COOKIE['user']);
+            $user = $userRepository->getUser($userRepository->decrypt((string)$_COOKIE['user']));
             if($user->getEnable() == 1) :?>
                 <li>
                     <i class="fas fa-plus"></i>

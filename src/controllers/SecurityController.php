@@ -49,16 +49,16 @@ class SecurityController extends AppController
 //            return $this->render('login', ['messages' => ['User with this email not exist']]);
 //        }
 //
-//        if(password_verify($password, $user->getPassword()))
-//        {
-//            return $this->render('login',['messages'=>['Wrong password']]);
-//        }
+        if(password_verify($password, $user->getPassword()))
+        {
+            return $this->render('login',['messages'=>['Wrong password']]);
+        }
 
         //return $this->>render('projects); to samo co na dole tylko innaczej napisane
 
         $this->logsRepository->addLog($this->userRepository->getUserDetailsId($user), "log in");
 
-        setcookie('user', $user->getEmail(), time() + (60*60)); //expires after 1 hours
+        setcookie('user', $this->userRepository->encrypt($user->getEmail()), time() + (60*60)); //expires after 1 hours
 
         $url = "http://$_SERVER[HTTP_HOST]";
         header("Location: {$url}/projects");

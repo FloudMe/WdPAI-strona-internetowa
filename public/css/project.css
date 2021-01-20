@@ -36,7 +36,7 @@ section {
     text-align: center;
 }
 
-button{
+.view-button{
     display: flex;
     width: 5vw;
     justify-content: center;
@@ -76,7 +76,7 @@ button{
         flex-direction: column;
     }
 
-    button{
+    .view-button{
         width: 10vw;
     }
 

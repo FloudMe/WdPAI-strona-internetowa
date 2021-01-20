@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<?php //if(isset($_COOKIE['user'])):?>
+<?php if(isset($_COOKIE['user'])):?>
 
 <head>
     <meta charset="UTF-8">
@@ -37,7 +37,7 @@
                         <h2><?= $category->getName(); ?></h2>
                         <p><?= $category->getDescription(); ?></p>
 
-                        <button onclick="location.href='foundAnimal'" type="button">view</button>
+                        <button class="view-button" onclick="location.href='foundAnimals/<?=$category->getId(); ?>'" type="button">view</button>
                     </div>
                 </div>
             <?php endforeach; ?>
@@ -46,9 +46,9 @@
 </div>
 </body>
 
-<?php //else: ?>
-<?//
-//$url = "http://$_SERVER[HTTP_HOST]";
-//header("Location: {$url}/");
-//return $this->render('login');?>
-<?php //endif; ?>
+<?php else: ?>
+<?
+$url = "http://$_SERVER[HTTP_HOST]";
+header("Location: {$url}/");
+return $this->render('login');?>
+<?php endif; ?>

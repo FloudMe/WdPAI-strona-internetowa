@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<?php //if(isset($_COOKIE['user'])):?>
+<?php if(isset($_COOKIE['user'])):?>
 
 <head>
     <meta charset="UTF-8">
@@ -34,12 +34,22 @@
                    <input name="name-animal" type="text" placeholder="imie zwierzecia">
                    <input name="address" type="text" placeholder="adres">
                    <input name="locality" type="text" placeholder="miejscowosc">
+
                    <div class="select-country">
-                       <label for="coutry">Kraj</label>
+                       <label for="country">Kraj</label>
                        <select name="country" id="coutry">
                            <option value="polska">Polska</option>
                            <option value="niemcy">Niemcy</option>
                            <option value="francja">Francja</option>
+                       </select>
+                   </div>
+
+                   <div class="select-category-animal">
+                       <label for="cAnimal">Kateogria zwierzecia</label>
+                       <select name="category-animal" id="animalCategory">
+                           <?php foreach ($animals_category as $category): ?>
+                               <option value =<?= $category->getId(); ?>><?= $category->getName(); ?></option>
+                           <?php endforeach; ?>
                        </select>
                    </div>
                    <input name="phone-number" type="text" placeholder="numer telefonu">
@@ -58,9 +68,9 @@
 </div>
 </body>
 
-<?php //else: ?>
-<?//
-//$url = "http://$_SERVER[HTTP_HOST]";
-//header("Location: {$url}/");
-//return $this->render('login');?>
-<?php //endif; ?>
+<?php else: ?>
+<?
+$url = "http://$_SERVER[HTTP_HOST]";
+header("Location: {$url}/");
+return $this->render('login');?>
+<?php endif; ?>

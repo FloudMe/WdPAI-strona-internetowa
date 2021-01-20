@@ -38,6 +38,36 @@ class ProjectRepository extends Repository
         );
     }
 
+    public function getProjectsById($id)
+    {
+        $result = [];
+
+        $stmt = $this->database->connect()->prepare('
+            SELECT * FROM "Animal" WHERE id_animal_category = :id
+        ');
+        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+        $stmt->execute();
+
+        $animals = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        foreach ($animals as $animal){
+            $result[] = new Project(
+                $animal['name'],
+                $animal['description'],
+                $animal['image'],
+                $animal['id'],
+                $animal['id_animal_category'],
+                $animal['id_user'],
+                $animal['address'],
+                $animal['country'],
+                $animal['place'],
+                $animal['phone']
+            );
+        }
+
+        return $result;
+    }
+
     public function getProjects(): array
     {
         $result = [];
